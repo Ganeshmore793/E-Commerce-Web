@@ -27,7 +27,9 @@
     gap: 4vh;
     padding-left: 75px;
 }
-
+.header-main a{
+    color: black;
+}
 
 .header-main p{
     padding-top: 17px;
@@ -89,10 +91,6 @@
     color: #000; /* Highlight on hover */
 }
 
-.cart-icon::before{
-    content:  '\1F6D2';
-}
-
 
 /*main containt start here*/
 .hero-section{
@@ -148,9 +146,10 @@ main{
     color: white;
     padding-left: 40px;
     justify-content: space-evenly;
+    padding: 30px;
 }
 
-.arrieval h1{
+.arrieval-text h1{
    font-size: 50px;
    text-align: center;
    padding: 20px;
@@ -163,13 +162,14 @@ main{
     
 }
 
-.card:hover{
-    transform: rotate(30deg);
+.card img:hover{
+    transform: scale(1.4) ;
+    transition-duration: 30;
 }
 
 .card img{
     height: 270px;
-    width: 230px;
+    width: 230px;   
     border-radius: 5px;
 }
 .review{
@@ -216,3 +216,63 @@ main{
     border: none;
     border-radius: 15px;
 }
+
+.footer-end{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#first-div{
+    width: 400px;
+}
+
+.icon.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    position: relative;
+  }
+
+  .icon.instagram::before {
+    content: "📸";
+    font-size: 24px;
+    color: white;
+  }
+
+  .icon.twitter {
+    background-color: black;
+    position: relative;
+  }
+  
+  .icon.twitter::before {
+    content: "𝕏";
+    font-size: 24px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .icon.github {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .icon.github::before {
+    content: "f09b"; /* Unicode for GitHub from FontAwesome */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+  }
+  .icon.facebook {
+    background-color: #1877f2;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .icon.facebook::before {
+    content: "f"; /* Facebook's iconic 'f' */
+    font-size: 24px;
+    font-weight: bold;
+  }  
+
+  .icons{
+    display: flex;
+    gap: 1vh;
+  }
+
