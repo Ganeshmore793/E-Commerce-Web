@@ -281,4 +281,6 @@ main{
     display: flex;
     gap: 1vh;
   }
-
+#stars{
+    display: flex;
+}
